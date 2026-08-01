@@ -1,0 +1,106 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(rgba(7, 20, 42, 0.85),
+            rgba(7, 20, 42, 0.85)),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.auth-container {
+    width: 400px;
+    margin: 70px auto;
+    padding: 35px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+/* Titles */
+.auth-container h1 {
+    text-align: center;
+    color: #0b2545;
+    margin-bottom: 5px;
+}
+
+.auth-container h3 {
+    text-align: center;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Form */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.auth-container label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #222;
+    font-weight: 600;
+}
+
+.auth-container input {
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.auth-container input:focus {
+    outline: none;
+    border-color: #0b2545;
+    box-shadow: 0 0 8px rgba(11,37,69,.3);
+}
+
+/* Button */
+.auth-container button {
+    margin-top: 25px;
+    padding: 14px;
+    background: #f4b400;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.auth-container button:hover {
+    background: #d99d00;
+    transform: translateY(-2px);
+}
+
+/* Links */
+.auth-container a {
+    color: #0b2545;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+.auth-container p,
+.auth-container h3:last-of-type {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .auth-container {
+        width: 90%;
+        padding: 25px;
+    }
+}
