@@ -76,7 +76,7 @@ export default function SignUp()
           alert('les mots de passe sont différents.');
           return;
         }
-        axios.post("http://127.0.0.1:8000/api/signup", {
+        axios.post(`${process.env.REACT_APP_API_URL}/signup`, {
             firstName: firstName,
             lastName: lastName,
             email: email,
